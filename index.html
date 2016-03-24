@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Ananse Hackerspace Map</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script> <!-- D3.js -->
+    <div id="map"></div>
+    <script>
+
+    var infos = {};
+    var curInfo = null;
+    var geocoder;
+      function initMap() {
+        var myLatLng = {lat: 41.8236, lng: -71.4222};
+	    geocoder = new google.maps.Geocoder();
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: myLatLng
+        });
+
+        d3.csv("newData.csv",
+			function(d) {
+				for (var i = 0; i<d.length; i++) {
+					cur = d[i];
+					contentString = "<h3>"+cur["Hackerspace"]+"</h3>";
+			  		try {
+		  				contentString += "<p>Website: <a href='"+cur["Website"]+"'>" + cur["Website"] + "</a></p>";
+		  				if (cur["E\-mail"]) {
+		  					contentString += "<p>Email: <a href='mailto:"+cur["E\-mail"]+"'>" + cur["E\-mail"] + "</a></p>";
+		  				}
+	  					contentString += "<p>"+cur["description"]+"</p>";
+			  		}
+			  		catch (exception) {
+			  			console.log(exception);
+			  		}
+
+			  		var infowindow = new google.maps.InfoWindow({
+					    content: contentString
+					});
+
+					infos[cur["Hackerspace"]] = infowindow;
+					curInfo = infowindow;
+
+				  	pos = {lat: parseFloat(cur["Long"]), lng: parseFloat(cur["Lat"])};
+
+			  		var marker = new google.maps.Marker({
+				        position: pos,
+				        map: map,
+				        title: cur["Hackerspace"]
+				    });
+
+				    marker.addListener('click', function() {
+				    	curInfo.close(map, marker);
+					    curInfo = infos[this.title];
+					    curInfo.open(map, this);
+					});
+
+					marker.setIcon('geopin.png');
+
+			 	}
+			}
+		);
+
+
+
+
+      }
+    </script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx3PSgpnppmH_0d54GkMekkrzjlQoLno0&callback=initMap">
+    </script>
+  </body>
+</html>
