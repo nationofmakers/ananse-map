@@ -36,7 +36,7 @@
 			function(d) {
 				for (var i = 0; i<d.length; i++) {
 					cur = d[i];
-					contentString = "<h3>"+cur["Hackerspace"]+"</h3>";
+					contentString = "<h3>"+cur["Name"]+"</h3>";
 			  		try {
 		  				contentString += "<p>Website: <a href='"+cur["Website"]+"'>" + cur["Website"] + "</a></p>";
 		  				if (cur["E\-mail"]) {
@@ -52,7 +52,7 @@
 					    content: contentString
 					});
 
-					infos[cur["Hackerspace"]] = infowindow;
+					infos[cur["Name"]] = infowindow;
 					curInfo = infowindow;
 
 				  	pos = {lat: parseFloat(cur["Lat"]), lng: parseFloat(cur["Long"])};
@@ -60,7 +60,7 @@
 			  		var marker = new google.maps.Marker({
 				        position: pos,
 				        map: map,
-				        title: cur["Hackerspace"]
+				        title: cur["Name"]
 				    });
 
 				    marker.addListener('click', function() {
