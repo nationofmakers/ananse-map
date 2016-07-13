@@ -27,6 +27,6 @@ Collaborators:
 - Our primary partners are the Open Movement: http://open.co
 - We're working with rrbaker's Maker.json repo: https://github.com/rrbaker/maker.json
 - We're also working with p2pfoundation's Python library for makerspaces: https://github.com/openp2pdesign/PyMakerspaces
-- Our mapping partners include Maker Media, the World Bank, Fablabs.io, hackerspaces.org, Hacedores, Bongohive, Superhero Spaces, and others
+- Our mapping partners include Global Innovation Gathering (GIG), Maker Media, World Bank, Fablabs.io, hackerspaces.org, Hacedores, Bongohive, Superhero Spaces, and others
 
 To join us, please email our team at anansegroup@gmail.com
