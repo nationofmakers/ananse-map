@@ -31,5 +31,6 @@ Collaborators:
 Prospective Collaborators:
 - SpaceAPI: https://github.com/slopjong/OpenSpaceDirectory 
 - Python library for makerspaces: https://github.com/openp2pdesign/PyMakerspaces
+- TheMakerMap.com https://github.com/hwstartup/TheMakerMap.com
 
 To join us, please email our team at anansegroup@gmail.com
