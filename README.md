@@ -26,7 +26,8 @@ This is an open source and not-for-profit initiative sponsored by Deutsche Gesel
 Collaborators:
 - Our primary partners are the Open Movement: http://open.co
 - We're working with rrbaker's Maker.json repo: https://github.com/rrbaker/maker.json
-- Our mapping partners include Global Innovation Gathering (GIG), Maker Media, World Bank, Fablabs.io, hackerspaces.org, Hacedores, Bongohive, Superhero Spaces, and others
+- Many thanks to the awesome APIs from Makery and Fablabs.io !
+- Our other mapping partners include Global Innovation Gathering (GIG), Maker Media, World Bank, hackerspaces.org, Hacedores, Bongohive, Superhero Spaces, and others
 
 Prospective Collaborators:
 - SpaceAPI: https://github.com/slopjong/OpenSpaceDirectory 
