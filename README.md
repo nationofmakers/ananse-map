@@ -1,5 +1,5 @@
 # ananse-map
-We are creating an open map/database for all the innovation spaces everywhere! This Atlas will merge existing lists of community innovation spaces from disparate maps onto a single, open-source platform— with an API so our data can be easily shared across other platforms. A tagging system will enable all spaces to share goals and find collaborators across interests such as electronic waste, prosthetics, 3D printing, primary education, green materials, water purification, etc. 
+We are creating an open-source (license TBD) map/database for all the innovation spaces everywhere! This Atlas will merge existing lists of community innovation spaces from disparate maps onto a single, open-source platform— with an API so our data can be easily shared across other platforms. A tagging system will enable all spaces to share goals and find collaborators across interests such as electronic waste, prosthetics, 3D printing, primary education, green materials, water purification, etc. 
 
 We have three primary criteria for including a given “community innovation space” on our map:
 
@@ -17,9 +17,11 @@ General details:
 - Slide-deck with more info about our project: http://www.slideshare.net/annawaldmanbrown/atlas-of-innovation-spaces 
 - Our team: http://anansegroup.com
 
-More details:
+COLLABORATE NOW by commenting on our Googledocs:
 - Public discussion on finalising datafields and categories: https://docs.google.com/document/d/10Wf1tkOUpkQf6ThKb4MthUGpxysGuiJV1TC93S9abS4/edit
 - Spreadsheet of all the databases which may need to be scraped for inclusion (after getting permissions): https://docs.google.com/spreadsheets/d/1Z4Opn2YqGe0LJi1Lm81ENDlVsAQI4G02gKLal-AMD2Y/edit#gid=1943753202 
+- Data verification and partnerships FAQ: https://docs.google.com/document/d/1muYpQHuWQYnOJVYOq8Yob7ZjMA3Nu_9sKk876XM5IEs/edit 
+- If you have strong opinions about database architecture, please email us at anansegroup@gmail.com
 
 This is an open source and not-for-profit initiative sponsored by Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH, the Fab Foundation, and the American Society of Mechanical Engineers (ASME).
 
